@@ -6,7 +6,7 @@ let arr2 = ["Banana", "Khajoor", "Gajar", "Moli", "Timatar"];
 // arr.push(arr2[3]);
 // arr.push(arr2[4]);
 arr.push(...arr2);
-// console.log(arr);
+console.log(arr);
 
 let person = {
   name: "Butt Sahib",
@@ -33,3 +33,4 @@ let buttPerson = {
   ...eat,
 };
 console.log(buttPerson);
+console.log(arr2);
