@@ -8,19 +8,19 @@ mongoose
   .then(async () => {
     console.log("DB connected");
 
-    //******Find********
+    // ******Find********
     // let result = await Human.find({ name: "Haseeb" });
     // console.log(result);
 
-    //******Create*******
-    // let myhuman = new Human();
-    // myhuman.name = "My Human";
-    // myhuman.age = 67;
-    // myhuman.gender = true;
-    // await myhuman.save();
-    // console.log(myhuman);
+    // ******Create*******
+    let myhuman = new Human();
+    myhuman.name = "My Human";
+    myhuman.age = 67;
+    myhuman.gender = true;
+    await myhuman.save();
+    console.log(myhuman);
 
-    //*******Update*******
+    // *******Update*******
     // let result = await Human.findByIdAndUpdate("62223ec8f7082582cde8d21d", {
     //   gender: false,
     //   name: "New name",
@@ -30,10 +30,10 @@ mongoose
     // result = await result.save();
     // console.log(result);
 
-    //*****************Delete******************/
+    // *****************Delete******************/
     // let result = await Human.findByIdAndDelete("62223ec8f7082582cde8d21d");
     // console.log(result);
-    //next
+    // next
   })
   .catch((error) => {
     console.log("Error connecting db");
